@@ -1,17 +1,31 @@
-import './App.css';
 import React from "react";
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
+  Route, Switch
 } from "react-router-dom";
+import './App.css';
+import Home from './components/Home/Home';
+import LeagueDetails from './components/LeagueDetails/LeagueDetails';
+import NotFound from './components/NotFound/NotFound';
 
 function App() {
   return (
-    <div>
-      
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/home">
+          <Home />
+        </Route>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/league/:idLeague">
+           <LeagueDetails />
+        </Route>
+        <Route path="*">
+          <NotFound />
+        </Route>
+        </Switch>
+    </Router>
   );
 }
 

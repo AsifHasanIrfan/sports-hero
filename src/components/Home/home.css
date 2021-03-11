@@ -1,0 +1,22 @@
+.header-bg {
+    height: 350px;
+    position: relative;
+}
+.header-bg {
+    background-image: url(../../images/header-bg.jpg);
+}
+.header-bg h2{
+    color: white;
+    font-weight: 620;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.home-bg{
+    background:	linear-gradient(85deg, #8e9eab, #eef2f3);
+}
+.card-bg{
+    background:	linear-gradient(85deg, #9796f0, #fbc7d4);
+}

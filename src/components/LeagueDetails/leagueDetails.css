@@ -1,0 +1,37 @@
+.league-bg img{
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 85%;
+}
+.league-details-bg{
+    background:	linear-gradient(85deg, #232526, #414345)
+}
+.league-bg{
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    background-blend-mode: overlay;
+}
+.league-card-bg{
+    background:	linear-gradient( #076585, #076585);
+}
+.container{
+    color: white;
+}
+.social-icon{
+    font-size: 40px;
+}
+.twitter{
+    color: #1DA1F2;
+}
+.facebook{
+    color: #1f50ac;
+}
+.youtube{
+    color: red;
+}
