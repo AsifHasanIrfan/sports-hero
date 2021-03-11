@@ -16,10 +16,10 @@ const LeagueDetails = () => {
         fetch(`https://www.thesportsdb.com/api/v1/json/1/lookupleague.php?id=${idLeague}`)
         .then(res => res.json())
         .then(data => setLeague(data.leagues[0]))
-    }, [])
+    }, [idLeague])
 
     const { strLeague, intFormedYear, strCountry, strSport, strGender, strDescriptionEN, strDescriptionFR, strFacebook, strTwitter, strYoutube, strBanner, strLogo } = league;
-    
+
     let leagueImg;
     if(strGender === "Male"){
         leagueImg = <img className="img-fluid" src={maleImg} alt="" />
